@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #202020c0;
+    backdrop-filter: blur(6px);
+}
+
+button{
+    cursor: pointer;
+}
+body{
+    background-color: #202020;
+}
+
+p, h1, h2, h3, h4{
+    color: #eee;
+}
+
+section{
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* NAVEGAÇÃO */
+
+.logo > span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #eee;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-item > a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #eee;
+    font-weight: 500;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item.select > a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(270deg,#eb0000,#fe074e);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+} 
+
+.login-btn > button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #eb0000;
+    transition: 0.6s;
+    color: #eee;
+}
+
+.login-btn > button:hover{
+    background-color: #fe074e;
+}
+
+/* INÍCIO */
+
+.slogan > h1{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #eee;
+}
+
+.slogan > p{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #eee;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+#contact-btn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #eb0000;
+    border-radius: 6px;
+    background-color: #eb0000;
+    color: #eee;
+    transition: 0.6s;
+}
+
+#contact-btn:hover{
+    background-color: #fe074e;
+}
+
+#products-btn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #eb0000;
+    background-color: transparent;
+    color: #eb0000;
+    border-radius: 6px;
+    transition: 0.6s;
+}
+
+#products-btn:hover{
+    color: #eee;
+    background-color: #eb0000;
+}
+/* SOBRE */
+
+#about > .container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about > .container> .left-container{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about > .container> .left-container > img{
+    max-width: 100%;
+}
+
+#about > .container> .right-container{
+    width: 45%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sub-title > h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+} 
+
+.about-text > P{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+/* PRODUTOS */
+
+#products > .sub-title{
+    margin-top: 5rem;
+}
+
+.product-item{
+    max-width: 22.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 300px;
+    flex-grow: 1;
+}
+
+.product-item > img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.product-item > h3{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: left;
+} 
+
+.product-item > p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+}
+
+.product-item > button{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #eb0000;
+    color: #eee;
+    transition: 0.6s;
+}
+
+.product-item>button:hover{
+    background-color: #fe074e;
+}
+
+#products > .container{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* CONTATO */
+
+#contact > .sub-title{
+    margin-top: 5rem;
+}
+
+#contact > form{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact > form > input{
+    width: 30rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 2px solid #eb0000;
+    background-color: #262626;
+    font-size: 0.875rem;
+    color: #eee;
+}
+
+#contact > form > textarea{
+    width: 30rem;
+    height: 10rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 2px solid #eb0000;
+    background-color: #262626;
+    font-size: 0.875rem;
+    color: #eee;
+    resize: none;
+}
+
+#contact > form > button{
+    width: 30rem;
+    color: #eee;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background-image: linear-gradient(270deg,#eb0000,#fe074e);
+    border: none;
+    font-weight: 500;
+}
+
+#contact > form > input:focus, textarea:focus{
+    outline: none;
+}
+
+.bars-menu{
+    display: none;
+}
+
+.bars-menu > i{
+    color: #eee;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-image: linear-gradient(270deg,#eb0000,#fe074e);
+}
+
+
+@media(max-width:  1023px){
+    .sub-title > h2{
+        font-size: 2rem;
+    }
+
+    .product-item{
+        max-width: 42.5%;
+        flex: 1 1 300px;
+    }
+
+    #about > .container{
+        flex-direction: column;
+    }
+
+    #about > .container > .left-container{
+        width: 100%;
+    }
+
+    #about > .container > .right-container{
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #202020;
+        flex-direction: column;
+        padding: 5rem;
+        justify-content: flex-start;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .nav-item > a{
+        font-size: 1.5rem;
+    }
+
+    .login-btn{
+        display: none;
+    }
+
+    .bars-menu{
+        display: block;
+        z-index: 1;
+    }
+
+}
+
+
+@media (max-width: 640px){
+    #contact > form{
+        max-width: 100%;
+    }
+
+    .slogan > h1{
+        font-size: 2.5rem;
+    }
+
+    .slogan > p{
+        font-size: 1.25rem;
+    }
+
+    .slogan{
+        max-width: 100%;
+    }
+
+    footer{
+        padding: 2rem 2rem;
+    }
+
+    .right-footer > p{
+        font-size: 0.7rem;
+    }
+    
+    #contact > form > input{
+        max-width: 100%;
+    
+    }
+    
+    #contact > form > textarea{
+        max-width: 100%;
+        
+    }
+    
+    #contact > form > button{
+        max-width: 100%;
+    }
+
+    .product-item{
+        max-width: 100%;
+        width: 100%;
+        flex: 1 1 300px;
+    }
+
+
+}
